@@ -1,12 +1,32 @@
-a.title {
+body {
+  color: white;
+  background-image: url("../images/1.jpg");
+  background-size: 100%;
+}
+
+header {
   display: inline-block;
 }
 
-ul#menu {
+.menu {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-ul#menu li {
+.menu li {
   display: inline-block;
+  overflow: hidden;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-aline: center;
+}
+.menu li a :hover {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
+.center {
+  background-position: 50% 50%;
 }
