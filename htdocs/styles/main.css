@@ -4,29 +4,92 @@ body {
   background-size: 100%;
 }
 
-header {
-  display: inline-block;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.menu {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+header {
+  display: table;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
 }
-.menu li {
-  display: inline-block;
-  overflow: hidden;
+header h1, header nav, header div, header p {
+  display: table-cell;
 }
-.menu li a {
-  display: inline-block;
-  text-decoration: none;
-  text-aline: center;
+header nav > ul {
+  diplay: table;
 }
-.menu li a :hover {
+header nav > ul li {
+  display: table-cell;
+  padding-left: 30px;
+}
+header nav > ul li a:hover {
   opacity: 0.5;
   transition: 0.8s;
 }
 
-.center {
-  background-position: 50% 50%;
+.center .catch {
+  font-size: 80px;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.center .catch + p {
+  font-size: 18px;
+  text-align: center;
+}
+.center .form_wrap {
+  width: 635px;
+  margin: 0 auto;
+  display: table;
+}
+.center .form_wrap div {
+  display: table-cell;
+}
+.center .form_wrap .input {
+  width: 400px;
+  position: relative;
+}
+.center .form_wrap .input > span {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  z-index: 1;
+  color: black;
+}
+.center .form_wrap .input > input[type="search"] {
+  position: relative;
+  z-index: 0;
+  width: 97%;
+  height: 47px;
+  font-size: 14px;
+  padding-left: 22px;
+  box-shadow: none;
+  border: 0;
+}
+.center .form_wrap .select {
+  width: 235px;
+}
+.center .form_wrap .select > select {
+  width: 100%;
+  position: relative;
+  top: 1px;
+  height: 47px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  padding-left: 80px;
+}
+
+.page_link {
+  position: absolute;
+  bottom: 40px;
+  width: 161px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
